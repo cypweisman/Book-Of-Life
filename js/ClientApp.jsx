@@ -1,24 +1,33 @@
-/* global React ReactDOM */
+const React = require('react')
+const ReactDOM = require('react-dom')
+const Search = require('./Search')
+const { Router, Route, IndexRoute, hashHistory } = require('react-router')
+const { persons } = require('../public/data')
+console.log({ persons })
 
-var div = React.DOM.div
-var h1 = React.DOM.h1
+const App = React.createClass({
+  assignPerson (nextState, replace) {
+      const personArray = persons.filter((person) => person.person_id === nextState.params.id )
 
-var MyTitle = React.createClass({
+    console.log('personState', personState, 'personArray', personArray)
+
+    if (personArray.length <1) {
+      return replace('/')
+    }
+
+    Object.assign(nextState.params, personArray[0])
+    return nextState
+    },
+
+
   render () {
     return (
-      div(null,
-        h1(null, 'Check out this component!')
-      )
+      <Router history={hashHistory}>
+        <Route path='/' component={Search} persons={persons} >
+        </Route>
+      </Router>
     )
   }
 })
 
-var MyFirstComponent = (
-  div(null,
-    React.createElement(MyTitle, null),
-    React.createElement(MyTitle, null),
-    React.createElement(MyTitle, null)
-  )
-)
-
-ReactDOM.render(MyFirstComponent, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
