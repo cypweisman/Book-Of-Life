@@ -1,9 +1,9 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 const Search = require('./Search')
+const Layout = require('./Layout')
 const { Router, Route, IndexRoute, hashHistory } = require('react-router')
 const { persons } = require('../public/data')
-console.log({ persons })
 
 const App = React.createClass({
   assignPerson (nextState, replace) {
@@ -23,7 +23,8 @@ const App = React.createClass({
   render () {
     return (
       <Router history={hashHistory}>
-        <Route path='/' component={Search} persons={persons} >
+        <Route path='/' component={Layout} >
+          <IndexRoute component={Search} persons={persons} />
         </Route>
       </Router>
     )
