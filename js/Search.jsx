@@ -18,14 +18,14 @@ const Search = React.createClass({
   render () {
     return (
       <div className='container'>
-      <div className='persons'>
-        {data.persons
-          .filter((person) => `${person.name} ${person.music}`
-            .toUpperCase()
-            .indexOf(this.state.searchTerm.toUpperCase()) >=0)
-          .map((person) => (
-          <PersonCard {...person} key={person.person_id} />
-        ))}
+        <div className='persons'>
+          {data.persons
+            .filter((person) => `${person.name} ${person.music}`
+              .toUpperCase()
+              .indexOf(this.state.searchTerm.toUpperCase()) >=0)
+            .map((person) => (
+            <PersonCard {...person} key={person.person_id} />
+          ))}
        </div>
       </div>
     )

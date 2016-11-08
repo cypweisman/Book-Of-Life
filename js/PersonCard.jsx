@@ -1,10 +1,10 @@
 const React = require('react')
 
 const PersonCard = (props) => (
-  <div className='show-card'>
-    <img src={`public/img/posters/${props.photo}`} className='show-card-img' />
-    <div className='show-card-text'>
-      <h3 className='show-card-title'>{props.name}</h3>
+  <div className='person-card'>
+    <img src={`public/img/posters/${props.photo}`} className='person-card-img' />
+    <div className='person-card-text'>
+      <h3 className='person-card-title'>{props.name}</h3>
     </div>
   </div>
 )

@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+.app-container {
+
+}
+
+.container {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  padding: 15px 30px;
+  overflow-y: scroll;
+  background-color: rgb(241, 237, 247);
+  border-radius: 5px;
+}
+
+.persons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.person-card {
+  border: 2px solid #333;
+  width: 30%;
+  overflow: scroll;
+
+
+}
+
+.person-card-img {
+  display: block;
+  margin: auto;
+  width: 46%;
+
+}
+
+.person-card-text {
+  display: block;
+  text-align: center;
+
+}
+
+.person-card-title {
+
+}
