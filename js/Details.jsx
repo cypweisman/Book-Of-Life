@@ -1,5 +1,6 @@
 const React = require('react')
 
+
 class Details extends React.Component {
   render () {
     const params = this.props.params || {}

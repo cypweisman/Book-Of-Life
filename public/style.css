@@ -17,10 +17,11 @@ html {
   justify-content: center;
   text-align: center;
   color: #333;
+  padding-bottom: 50px;
 }
 
 .container {
-   position: absolute;
+  position: absolute;
   top: 15px;
   left: 15px;
   right: 15px;
@@ -88,6 +89,7 @@ html {
   width: 50%;
   margin: auto;
   margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 /* .detail-music, .detail-special-moment, .detail-activity, .detail-last-visit {
