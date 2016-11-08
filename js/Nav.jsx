@@ -3,6 +3,18 @@ const { Link } = require('react-router')
 
 const Nav = React.createClass({
   render () {
+    let utilSpace
+    if (this.props.showSearch) {
+      utilSpace = <input type='text' className='search-input' placeholder='search' value={this.props.searchTerm} onChange={this.handleSearchTermEvent} />
+    } else {
+      utilSpace = (
+        <h2 className='header-back'>
+          <Link to='/search'>
+            Back
+          </Link>
+        </h2>
+      )
+    }
     return (
       <header className='header'>
         <h1 className='brand'>
@@ -14,5 +26,6 @@ const Nav = React.createClass({
       </header>
     )
   }
-
 })
+
+module.exports = Nav

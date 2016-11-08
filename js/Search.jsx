@@ -1,5 +1,6 @@
 const React = require('react')
 const PersonCard = require('./PersonCard')
+const Nav = require('./Nav')
 const { object } = React.PropTypes
 const data = require('../public/data')
 
@@ -18,6 +19,7 @@ const Search = React.createClass({
   render () {
     return (
       <div className='container'>
+      <Nav />
         <div className='persons'>
           {data.persons
             .filter((person) => `${person.name} ${person.music}`
