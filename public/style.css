@@ -90,12 +90,10 @@ html {
   margin-bottom: 50px;
 }
 
-.detail-music, .detail-special-moment, .detail-activity, .detail-last-visit {
-  border: 2px solid #333;
-  width: 50%;
-  display: inline-block;
-  margin-bottom: 20px;
-}
+/* .detail-music, .detail-special-moment, .detail-activity, .detail-last-visit {
+
+  <img src="https://pbs.twimg.com/profile_images/761645430937522177/f5-8JkIE.jpg" alt="Smiley face" height="390" width="390" />
+} */
 
 /* entire container, keeps perspective */
 .flip-container {
@@ -114,7 +112,7 @@ html {
 
 .flip-container, .front, .back {
     width: 390px;
-    height: 480px;
+    height: 390px;
 }
 
 /* flip speed goes here */
@@ -136,6 +134,8 @@ html {
 
 /* front pane, placed above back */
 .front {
+    color: red;
+    padding-top: 30%;
     z-index: 2;
     /* for firefox 31 */
     transform: rotateY(0deg);
@@ -143,6 +143,9 @@ html {
 
 /* back, initially hidden pane */
 .back {
+    color: white;
+    background-color: rebeccapurple;
+    padding-top: 30%;
     transform: rotateY(180deg);
 }
 

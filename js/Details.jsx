@@ -14,10 +14,10 @@ class Details extends React.Component {
         <div className='flip-container' >
             <div className='flipper'>
               <div className='front'>
-                <img src="https://pbs.twimg.com/profile_images/761645430937522177/f5-8JkIE.jpg" alt="Smiley face" height="390" width="390" />
+                <h1>Your favorite song together :)</h1>
               </div>
               <div className='back'>
-                <p>{music}</p>
+                <h1>{music}</h1>
               </div>
             </div>
         </div>
@@ -25,10 +25,10 @@ class Details extends React.Component {
         <div className='flip-container' >
             <div className='flipper'>
               <div className='front'>
-                <img src="https://pbs.twimg.com/profile_images/761645430937522177/f5-8JkIE.jpg" alt="Smiley face" height="390" width="390" />
+                <h1>What you have fun doing alongside {name} </h1>
               </div>
               <div className='back'>
-                <p>{activity}</p>
+                <h1>{activity}</h1>
               </div>
             </div>
         </div>
@@ -36,10 +36,10 @@ class Details extends React.Component {
         <div className='flip-container' >
             <div className='flipper'>
               <div className='front'>
-                <img src="https://pbs.twimg.com/profile_images/761645430937522177/f5-8JkIE.jpg" alt="Smiley face" height="390" width="390" />
+                <h1>Special Moment :)</h1>
               </div>
               <div className='back'>
-                <p>{special_moment}</p>
+                <h1>{special_moment}</h1>
               </div>
             </div>
         </div>
@@ -47,10 +47,10 @@ class Details extends React.Component {
         <div className='flip-container' >
             <div className='flipper'>
               <div className='front'>
-                <img src="https://pbs.twimg.com/profile_images/761645430937522177/f5-8JkIE.jpg" alt="Smiley face" height="390" width="390" />
+                <h1>What you did on your last visit </h1>
               </div>
               <div className='back'>
-                <p>{last_visit}</p>
+                <h1>{last_visit}</h1>
               </div>
             </div>
         </div>
