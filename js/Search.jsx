@@ -4,6 +4,7 @@ const Nav = require('./Nav')
 const { object } = React.PropTypes
 const data = require('../public/data')
 
+
 const Search = React.createClass({
   getInitialState() {
     return {
