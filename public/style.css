@@ -29,7 +29,7 @@ html {
   width: 100%;
 }
 
-.show-card {
+.person-card {
   border: 2px solid #333;
   width: 30%;
   overflow: scroll;
@@ -37,19 +37,19 @@ html {
 
 }
 
-.show-card-img {
+.person-card-img {
   display: block;
   margin: auto;
   width: 46%;
 
 }
 
-.show-card-text {
+.person-card-text {
   display: block;
   text-align: center;
 
 }
 
-.show-card-title {
+.person-card-title {
 
 }
