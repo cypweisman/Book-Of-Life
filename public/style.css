@@ -7,7 +7,6 @@ html {
 }
 
 .app-container {
-   position: relative;
   width: 100%;
   height: 100vh;
   background-image: url(img/3.jpg);
@@ -21,7 +20,7 @@ html {
 }
 
 .container {
-  position: absolute;
+   position: absolute;
   top: 15px;
   left: 15px;
   right: 15px;
@@ -31,6 +30,7 @@ html {
   background-color: rgb(241, 237, 247);
   border-radius: 5px;
 }
+
 
 .header {
   z-index: 10;
@@ -82,3 +82,67 @@ html {
 .person-card-title {
 
 }
+
+.detail-photo{
+  border: 2px solid #333;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.detail-music, .detail-special-moment, .detail-activity, .detail-last-visit {
+  border: 2px solid #333;
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+    border: 2px solid #333;
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+
+
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
