@@ -10,6 +10,7 @@ const PersonCard = (props) => (
       </div>
     </div>
   </Link>
+
 )
 
 const { string } = React.PropTypes

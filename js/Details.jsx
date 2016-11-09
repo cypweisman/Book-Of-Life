@@ -3,13 +3,13 @@ const React = require('react')
 
 class Details extends React.Component {
   render () {
-    const params = this.props.params || {}
-    const { name, photo, music, activity, special_moment, last_visit } = params
+    const person = this.props.params.person || {}
+    // const { name, photo, music, activity, special_moment, last_visit } = params
     return (
       <div className='container'>
 
         <div className="detail-photo">
-          <img src={`public/img/posters/${photo}`} />
+          <img src={`public/img/posters/${person.photo}`} />
         </div>
 
         <div className='flip-container' >
@@ -18,7 +18,7 @@ class Details extends React.Component {
                 <h1>Your favorite song together :)</h1>
               </div>
               <div className='back'>
-                <h1>{music}</h1>
+                <h1>{person.music}</h1>
               </div>
             </div>
         </div>
@@ -26,10 +26,10 @@ class Details extends React.Component {
         <div className='flip-container' >
             <div className='flipper'>
               <div className='front'>
-                <h1>What you have fun doing alongside {name} </h1>
+                <h1>What you have fun doing alongside {person.name} </h1>
               </div>
               <div className='back'>
-                <h1>{activity}</h1>
+                <h1>{person.activity}</h1>
               </div>
             </div>
         </div>
@@ -40,7 +40,7 @@ class Details extends React.Component {
                 <h1>Special Moment :)</h1>
               </div>
               <div className='back'>
-                <h1>{special_moment}</h1>
+                <h1>{person.special_moment}</h1>
               </div>
             </div>
         </div>
@@ -51,7 +51,7 @@ class Details extends React.Component {
                 <h1>What you did on your last visit </h1>
               </div>
               <div className='back'>
-                <h1>{last_visit}</h1>
+                <h1>{person.last_visit}</h1>
               </div>
             </div>
         </div>

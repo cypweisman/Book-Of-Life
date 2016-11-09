@@ -2,7 +2,6 @@ const React = require('react')
 const PersonCard = require('./PersonCard')
 const Nav = require('./Nav')
 const { object } = React.PropTypes
-const data = require('../public/data')
 
 
 const Search = React.createClass({
@@ -22,7 +21,7 @@ const Search = React.createClass({
       <div className='container'>
       <Nav />
         <div className='persons'>
-          {data.persons
+          {this.props.route.persons
             .filter((person) => `${person.name} ${person.music}`
               .toUpperCase()
               .indexOf(this.state.searchTerm.toUpperCase()) >=0)
