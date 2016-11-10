@@ -1,5 +1,5 @@
 const path = require('path')
-
+console.log(__dirname);
 module.exports = {
   context: __dirname,
   entry: './js/ClientApp.jsx',
@@ -15,6 +15,9 @@ module.exports = {
     reasons: true,
     chunks: false
   },
+  devServer: {
+    port: 8000
+  },
   module: {
     loaders: [
       {
@@ -26,6 +29,7 @@ module.exports = {
         test: /\.json$/,
         loader: 'json-loader'
       }
+
     ]
   }
 }

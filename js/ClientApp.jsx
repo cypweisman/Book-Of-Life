@@ -14,7 +14,8 @@ const App = React.createClass({
       return replace('/')
     }
 
-    Object.assign(nextState.params, personArray[0])
+    // Object.assign(nextState.params, personArray[0])
+    nextState.params.person = personArray[0]
     return nextState
     },
 
