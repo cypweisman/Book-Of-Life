@@ -4,6 +4,7 @@ const React = require('react')
 class Details extends React.Component {
   render () {
     const person = this.props.params.person || {}
+    //const params = this.props.params || {}
     // const { name, photo, music, activity, special_moment, last_visit } = params
     return (
       <div className='container'>
