@@ -1,1 +1,1 @@
-# A web app focused on memory retention (family recognition) for dementia patients
+- My first attempt using React, Book Of Like is a web app that would be used by people with dementia to help them with memory retention: recognizing family remembers and facts about their relationship. 
