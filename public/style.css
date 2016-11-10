@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .app-container {
@@ -90,10 +90,13 @@ html {
 
 .detail-photo{
   border: 2px solid #333;
-  width: 50%;
+  width: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: auto;
   margin-bottom: 50px;
   margin-top: 100px;
+  background-color: rgba(220, 220, 220, .8);
 }
 
 /* .detail-music, .detail-special-moment, .detail-activity, .detail-last-visit {
@@ -105,7 +108,7 @@ html {
 .flip-container {
     perspective: 1000px;
     border: 2px solid #333;
-    width: 50%;
+   /* width: 40%; */
     display: inline-block;
     margin-bottom: 20px;
 
@@ -140,11 +143,12 @@ html {
 
 /* front pane, placed above back */
 .front {
-    color: red;
+    color: #1c293f;
     padding-top: 30%;
     z-index: 2;
     /* for firefox 31 */
     transform: rotateY(0deg);
+    background-color: rgba(220, 220, 220, .8);
 }
 
 /* back, initially hidden pane */

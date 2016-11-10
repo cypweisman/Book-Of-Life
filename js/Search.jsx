@@ -5,17 +5,6 @@ const { object } = React.PropTypes
 
 
 const Search = React.createClass({
-  getInitialState() {
-    return {
-      searchTerm: ''
-    }
-  },
-  propTypes: {
-    route: object
-  },
-  handleSearchTermChange (searchTerm) {
-    this.setState({ searchTerm: searchTerm })
-  },
   render () {
     return (
       <div className='container'>
