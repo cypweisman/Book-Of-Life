@@ -1,11 +1,10 @@
 const React = require('react')
-
+import _ from 'underscore'
 
 class Details extends React.Component {
   render () {
-    const person = this.props.params.person || {}
-    //const params = this.props.params || {}
-    // const { name, photo, music, activity, special_moment, last_visit } = params
+    console.log(this.props)
+    const person = _.findWhere(this.props.persons, {person_id: this.props.params.id}) || {}
     return (
       <div className='container'>
 
