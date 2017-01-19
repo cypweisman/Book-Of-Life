@@ -61,17 +61,18 @@ html {
 
 .person-card {
   border: 2px solid #333;
-  width: 30%;
+  height: 350px;
+  width: 350px;
   overflow: scroll;
   background-color: rgba(220, 220, 220, .8);
-  border-radius: 50%;
 
 }
 
 .person-card-img {
   display: block;
   margin: auto;
-  width: 66%;
+  max-width: 90%;
+  max-height: 90%;
   padding-top: 60px;
 
 }
@@ -90,9 +91,10 @@ html {
 
 .detail-photo{
   border: 2px solid #333;
-  width: 30%;
+  width: 350px;
+  height: 350px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: auto;
   margin-bottom: 50px;
   margin-top: 100px;
@@ -135,7 +137,6 @@ html {
 /* hide back of pane during swap */
 .front, .back {
     backface-visibility: hidden;
-
     position: absolute;
     top: 0;
     left: 0;

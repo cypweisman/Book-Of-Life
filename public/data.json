@@ -3,28 +3,28 @@
         "person_id": "1",
         "photo": "ad.jpg",
         "name": "Jillian",
-        "category": "child",
-        "music": "It's Raining Men",
-        "activity": "We love to go on walks and tell dirty jokes",
-        "special_moment": "You came to see my band play",
-        "last_visit": "I played a song for you and your friends at the place"
+        "category": "family",
+        "music": "Beyonce songs",
+        "activity": "We like to eat",
+        "special_moment": "You saw me for the first time",
+        "last_visit": "You fed me bananas"
     }, {
         "person_id": "2",
-        "photo": "ad.jpg",
-        "name": "Kim",
-        "category": "child",
-        "music": "Touch The Sky",
+        "photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+        "name": "Joan",
+        "category": "friend",
+        "music": "one of Bette Midler's sappy songs",
         "activity": "We love to go on walks and tell dirty jokes",
-        "special_moment": "You came to see my band play",
-        "last_visit": "I played a song for you and your friends at the place"
+        "special_moment": "You came to see me at that dive on Lincoln",
+        "last_visit": "We trashed some Hollywood 'stars'"
     }, {
         "person_id": "3",
-        "photo": "ad.jpg",
-        "name": "Joe",
-        "category": "child",
-        "music": "Formation",
-        "activity": "We love to go on walks and tell dirty jokes",
-        "special_moment": "You came to see my band play",
-        "last_visit": "I played a song for you and your friends at the place"
+        "photo": "Mel_Brooks.png",
+        "name": "Mel",
+        "category": "friend",
+        "music": "Gershwin",
+        "activity": "We watch old comedies",
+        "special_moment": "We watched my first film together",
+        "last_visit": "We had my assistant tweet things"
     }]
 }
