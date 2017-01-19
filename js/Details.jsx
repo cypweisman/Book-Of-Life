@@ -9,7 +9,8 @@ class Details extends React.Component {
       <div className='container'>
 
         <div className="detail-photo">
-          <img src={`public/img/posters/${person.photo}`} />
+          <img src={`public/img/posters/${person.photo}`} className='person-card-img' />
+          <h1>{person.name}</h1>
         </div>
 
         <div className='flip-container' >
@@ -26,7 +27,7 @@ class Details extends React.Component {
         <div className='flip-container' >
             <div className='flipper'>
               <div className='front'>
-                <h1>What you have fun doing alongside {person.name} </h1>
+                <h1>What you have fun doing with {person.name} </h1>
               </div>
               <div className='back'>
                 <h1>{person.activity}</h1>
