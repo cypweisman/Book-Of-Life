@@ -1,1 +1,5 @@
-- My first attempt using React, Book Of Like is a web app that would be used by people with dementia to help them with memory retention: recognizing family remembers and facts about their relationship. 
+###Book Of Life
+
+My first attempt using React. This app would be used by people with dementia to help them recognize family/friends and facts about their relationship. 
+
+[See it here](https://cypweisman.github.io/Book-Of-Life/)
