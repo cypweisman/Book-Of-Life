@@ -75,16 +75,18 @@
 	  //   nextState.params.person = personArray[0]
 	  //   return nextState
 	  //   },
+	  //new comment
 
 
 	  render: function render() {
 	    {/* this is a comment. Use curly braces whenever you want to use normal js in jsx */}
+	    console.log("run me");
 	    return React.createElement(
 	      Router,
 	      { history: hashHistory },
 	      React.createElement(
 	        Route,
-	        { path: '/', component: Layout },
+	        { path: '/Book-Of-Life/', component: Layout },
 	        React.createElement(IndexRoute, { component: Home }),
 	        React.createElement(Route, { path: '/details/:id', component: Details, onEnter: this.assignPerson })
 	      )
