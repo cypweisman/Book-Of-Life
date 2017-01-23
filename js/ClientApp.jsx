@@ -27,7 +27,7 @@ const App = React.createClass({
   console.log("run me")
     return (
       <Router history={hashHistory}>
-        <Route path='/Book-Of-Life/' component={Layout} >
+        <Route path='/Book-Of-Life' component={Layout} >
           <IndexRoute component={Home} />
           <Route path='/details/:id' component={Details} onEnter={this.assignPerson} />
         </Route>
