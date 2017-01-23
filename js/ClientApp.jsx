@@ -26,7 +26,7 @@ const App = React.createClass({
   {/* this is a comment. Use curly braces whenever you want to use normal js in jsx */}
     return (
       <Router history={hashHistory}>
-        <Route path='/' component={Layout} >
+        <Route path='/Book-Of-Life/' component={Layout} >
           <IndexRoute component={Home} />
           <Route path='/details/:id' component={Details} onEnter={this.assignPerson} />
         </Route>
