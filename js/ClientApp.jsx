@@ -24,6 +24,7 @@ const App = React.createClass({
 
   render () {
   {/* this is a comment. Use curly braces whenever you want to use normal js in jsx */}
+  console.log("run me")
     return (
       <Router history={hashHistory}>
         <Route path='/Book-Of-Life/' component={Layout} >
