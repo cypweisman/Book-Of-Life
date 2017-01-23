@@ -85,7 +85,7 @@
 	      { history: hashHistory },
 	      React.createElement(
 	        Route,
-	        { path: '/Book-Of-Life/', component: Layout },
+	        { path: '/', component: Layout },
 	        React.createElement(IndexRoute, { component: Home }),
 	        React.createElement(Route, { path: '/details/:id', component: Details, onEnter: this.assignPerson })
 	      )
