@@ -19931,7 +19931,7 @@
 	        React.createElement(
 	          Link,
 	          { to: '/', className: 'brand-link' },
-	          'BookOfLife'
+	          'Book Of Life'
 	        )
 	      )
 	    );
@@ -25946,7 +25946,7 @@
 	          React.createElement('img', { src: 'public/img/posters/' + person.photo, className: 'person-card-img' }),
 	          React.createElement(
 	            'h1',
-	            null,
+	            { className: 'person-card-title', style: { color: '#22324c' } },
 	            person.name
 	          )
 	        ),
@@ -27735,7 +27735,7 @@
 	        React.createElement('img', { src: 'public/img/posters/' + props.photo, className: 'person-card-img' }),
 	        React.createElement(
 	          'div',
-	          { className: 'person-card-text' },
+	          null,
 	          React.createElement(
 	            'h3',
 	            { className: 'person-card-title' },

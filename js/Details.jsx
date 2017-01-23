@@ -10,7 +10,7 @@ class Details extends React.Component {
 
         <div className="detail-photo">
           <img src={`public/img/posters/${person.photo}`} className='person-card-img' />
-          <h1>{person.name}</h1>
+          <h1 className='person-card-title' style={{color: '#22324c'}} >{person.name}</h1>
         </div>
 
         <div className='flip-container' >

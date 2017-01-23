@@ -7,7 +7,7 @@ const PersonCard = (props) => (
     <Link to={`/details/${props.person_id}`} >
       <div className='person-card'>
           <img src={`public/img/posters/${props.photo}`} className='person-card-img' />
-        <div className='person-card-text'>
+        <div>
           <h3 className='person-card-title'>{props.name}</h3>
         </div>
       </div>

@@ -65,28 +65,25 @@ html {
   width: 350px;
   overflow: scroll;
   background-color: rgba(220, 220, 220, .8);
+  margin-top: 55%;
 
 }
 
 .person-card-img {
   display: block;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
   max-width: 90%;
-  max-height: 90%;
-  padding-top: 60px;
-
-}
-
-
-
-.person-card-text {
-  display: block;
-  text-align: center;
-
+  max-height: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .person-card-title {
-
+  display: block;
+  text-align: center;
+  margin-top: 0px;
 }
 
 .detail-photo{

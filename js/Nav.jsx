@@ -9,7 +9,7 @@ const Nav = React.createClass({
       <header className='header'>
         <h1 className='brand'>
           <Link to='/' className='brand-link'>
-          BookOfLife
+          Book Of Life
           </Link>
         </h1>
       </header>
