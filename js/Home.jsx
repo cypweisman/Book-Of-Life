@@ -1,8 +1,6 @@
 const React = require('react')
 const PersonCard = require('./PersonCard')
-//const { persons } = require('../public/data')
 
-//const Home = React.createClass({
   export default class Home extends React.Component {
   render(){
     console.log(this.props)
@@ -21,6 +19,6 @@ const PersonCard = require('./PersonCard')
     )
   }
 }
-//})
+
 
 module.exports = Home

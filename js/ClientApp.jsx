@@ -8,20 +8,6 @@ const { persons } = require('../public/data')
 
 
 const App = React.createClass({
-  // assignPerson (nextState, replace) {
-  //     const personArray = persons.filter((person) => person.person_id === nextState.params.id )
-
-  //   if (personArray.length <1) {
-  //     return replace('/')
-  //   }
-
-  //   // Object.assign(nextState.params, personArray[0])
-  //   nextState.params.person = personArray[0]
-  //   return nextState
-  //   },
-  //new comment
-
-
   render () {
   {/* this is a comment. Use curly braces whenever you want to use normal js in jsx */}
     return (
