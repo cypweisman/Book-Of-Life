@@ -1,7 +1,7 @@
 const React = require('react')
 const PersonCard = require('./PersonCard')
 
-  class Home extends React.Component {
+class Home extends React.Component {
     constructor() {
       super();
       this.state = {

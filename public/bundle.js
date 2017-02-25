@@ -19828,10 +19828,6 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
@@ -19865,7 +19861,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'app-container' },
+	        { className: 'container' },
 	        _react2.default.createElement(Nav, null),
 	        (0, _react.cloneElement)(_react.Children.only(this.props.children), { persons: persons, handleChangePersons: this.handleChangePersons })
 	      );
@@ -19882,7 +19878,6 @@
 	//   </div>
 	// )
 
-	exports.default = Layout;
 	var element = _react2.default.PropTypes.element;
 
 
