@@ -15,7 +15,7 @@ class Home extends React.Component {
     }
 
     getPeople(){
-      var selectedPersons = this.props.persons.slice(this.state.offSet, this.state.offSet + 3);
+      var selectedPersons = this.props.persons.slice(this.state.offSet, this.state.offSet + 2);
       var people = this.state.people;
 
       selectedPersons.forEach(function(person){
@@ -24,7 +24,7 @@ class Home extends React.Component {
 
       this.setState({
         people: people,
-        offSet: this.state.offSet+=3
+        offSet: this.state.offSet+=2
       });
 
 
@@ -49,7 +49,7 @@ class Home extends React.Component {
             )
         })}
       </ol>
-      <button className="home-btn" ref="query" onClick={ (e) => {this.getPeople(); } } type="button">See More</button>
+      <button className="btn btn-primary btn-lg" ref="query" onClick={ (e) => {this.getPeople(); } } type="button">See More</button>
     </div>
     )
   }

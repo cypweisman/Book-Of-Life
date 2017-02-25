@@ -19903,7 +19903,7 @@
 	  render: function render() {
 	    return React.createElement(
 	      'header',
-	      { className: 'header' },
+	      { className: 'navbar navbar-default' },
 	      React.createElement(
 	        'h1',
 	        { className: 'brand' },
@@ -25879,63 +25879,63 @@
 			},
 			{
 				"person_id": "4",
-				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"photo": "No_person.jpg",
 				"name": "Bob",
 				"category": "friend",
-				"music": "one of Bette Midler's sappy songs",
-				"activity": "We love to go on walks and tell dirty jokes",
-				"special_moment": "You came to see me at that dive on Lincoln",
-				"last_visit": "We trashed some Hollywood 'stars'"
+				"music": "Hall & Oates",
+				"activity": "Fishing",
+				"special_moment": "First big camping trip",
+				"last_visit": "We cooked fish"
 			},
 			{
 				"person_id": "5",
-				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"photo": "No_person.jpg",
 				"name": "Steve",
 				"category": "friend",
-				"music": "one of Bette Midler's sappy songs",
-				"activity": "We love to go on walks and tell dirty jokes",
-				"special_moment": "You came to see me at that dive on Lincoln",
-				"last_visit": "We trashed some Hollywood 'stars'"
+				"music": "I dont' listen",
+				"activity": "I'm boring",
+				"special_moment": "You threw my surprise party",
+				"last_visit": "You made fun of me for having no life"
 			},
 			{
 				"person_id": "6",
-				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"photo": "No_person.jpg",
 				"name": "Dale",
 				"category": "friend",
-				"music": "one of Bette Midler's sappy songs",
-				"activity": "We love to go on walks and tell dirty jokes",
-				"special_moment": "You came to see me at that dive on Lincoln",
-				"last_visit": "We trashed some Hollywood 'stars'"
+				"music": "Top hits",
+				"activity": "Dancing",
+				"special_moment": "You came to my dance performance",
+				"last_visit": "I brought us some junk food"
 			},
 			{
 				"person_id": "7",
-				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
-				"name": "Cole",
+				"photo": "No_person.jpg",
+				"name": "Camden",
 				"category": "friend",
-				"music": "one of Bette Midler's sappy songs",
-				"activity": "We love to go on walks and tell dirty jokes",
-				"special_moment": "You came to see me at that dive on Lincoln",
-				"last_visit": "We trashed some Hollywood 'stars'"
+				"music": "Oldies",
+				"activity": "Talking about our favorite fiction",
+				"special_moment": "We graduated college together",
+				"last_visit": "I brought you a book"
 			},
 			{
 				"person_id": "8",
-				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
-				"name": "Eric",
+				"photo": "No_person.jpg",
+				"name": "John",
 				"category": "friend",
-				"music": "one of Bette Midler's sappy songs",
-				"activity": "We love to go on walks and tell dirty jokes",
-				"special_moment": "You came to see me at that dive on Lincoln",
-				"last_visit": "We trashed some Hollywood 'stars'"
+				"music": "James Brown",
+				"activity": "We love to eat",
+				"special_moment": "Everytime we eat",
+				"last_visit": "We ate ourselves sick"
 			},
 			{
 				"person_id": "9",
-				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
-				"name": "tatum",
+				"photo": "No_person.jpg",
+				"name": "Manny",
 				"category": "friend",
-				"music": "one of Bette Midler's sappy songs",
-				"activity": "We love to go on walks and tell dirty jokes",
-				"special_moment": "You came to see me at that dive on Lincoln",
-				"last_visit": "We trashed some Hollywood 'stars'"
+				"music": "Whatever my kids like",
+				"activity": "Playing with the kids",
+				"special_moment": "You were there when my first child was born",
+				"last_visit": "We played with the kids"
 			}
 		]
 	};
@@ -25978,14 +25978,14 @@
 	      var person = _underscore2.default.findWhere(this.props.persons, { person_id: this.props.params.id }) || {};
 	      return React.createElement(
 	        'div',
-	        { className: 'container' },
+	        null,
 	        React.createElement(
 	          'div',
 	          { className: 'detail-photo' },
 	          React.createElement('img', { src: 'public/img/posters/' + person.photo, className: 'person-card-img' }),
 	          React.createElement(
 	            'h1',
-	            { className: 'person-card-title', style: { color: '#22324c' } },
+	            { className: 'person-card-title' },
 	            person.name
 	          )
 	        ),
@@ -27728,7 +27728,7 @@
 	  }, {
 	    key: 'getPeople',
 	    value: function getPeople() {
-	      var selectedPersons = this.props.persons.slice(this.state.offSet, this.state.offSet + 3);
+	      var selectedPersons = this.props.persons.slice(this.state.offSet, this.state.offSet + 2);
 	      var people = this.state.people;
 
 	      selectedPersons.forEach(function (person) {
@@ -27737,7 +27737,7 @@
 
 	      this.setState({
 	        people: people,
-	        offSet: this.state.offSet += 3
+	        offSet: this.state.offSet += 2
 	      });
 
 	      // for(var i=this.state.offSet; i < (this.state.offSet + 2); i++){
@@ -27768,7 +27768,7 @@
 	        ),
 	        React.createElement(
 	          'button',
-	          { className: 'home-btn', ref: 'query', onClick: function onClick(e) {
+	          { className: 'btn btn-primary btn-lg', ref: 'query', onClick: function onClick(e) {
 	              _this2.getPeople();
 	            }, type: 'button' },
 	          'See More'

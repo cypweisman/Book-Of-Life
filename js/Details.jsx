@@ -6,11 +6,10 @@ class Details extends React.Component {
     console.log(this.props)
     const person = _.findWhere(this.props.persons, {person_id: this.props.params.id}) || {}
     return (
-      <div className='container'>
-
+      <div>
         <div className="detail-photo">
           <img src={`public/img/posters/${person.photo}`} className='person-card-img' />
-          <h1 className='person-card-title' style={{color: '#22324c'}} >{person.name}</h1>
+          <h1 className='person-card-title' >{person.name}</h1>
         </div>
 
         <div className='flip-container' >
@@ -56,9 +55,6 @@ class Details extends React.Component {
               </div>
             </div>
         </div>
-
-
-
       </div>
     )
   }
