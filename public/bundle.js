@@ -25915,7 +25915,7 @@
 			{
 				"person_id": "7",
 				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
-				"name": "Bob",
+				"name": "Cole",
 				"category": "friend",
 				"music": "one of Bette Midler's sappy songs",
 				"activity": "We love to go on walks and tell dirty jokes",
@@ -25925,7 +25925,7 @@
 			{
 				"person_id": "8",
 				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
-				"name": "Jane",
+				"name": "Eric",
 				"category": "friend",
 				"music": "one of Bette Midler's sappy songs",
 				"activity": "We love to go on walks and tell dirty jokes",
@@ -25935,7 +25935,7 @@
 			{
 				"person_id": "9",
 				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
-				"name": "Ninny",
+				"name": "tatum",
 				"category": "friend",
 				"music": "one of Bette Midler's sappy songs",
 				"activity": "We love to go on walks and tell dirty jokes",
@@ -27733,12 +27733,23 @@
 	  }, {
 	    key: 'getPeople',
 	    value: function getPeople() {
-	      for (var i = this.state.offSet; i < this.state.offSet + 3; i++) {
-	        this.setState({
-	          people: this.state.people.concat(this.props.persons[i])
-	        });
-	      }
-	      offSet: this.state.offSet += 3;
+	      var selectedPersons = this.props.persons.slice(this.state.offSet, this.state.offSet + 3);
+	      var people = this.state.people;
+
+	      selectedPersons.forEach(function (person) {
+	        people.push(person);
+	      }, this);
+
+	      this.setState({
+	        people: people,
+	        offSet: this.state.offSet += 3
+	      });
+
+	      // for(var i=this.state.offSet; i < (this.state.offSet + 2); i++){
+	      //   this.setState({
+	      //     people: this.state.people.push(this.props.persons[i])
+	      //   });
+	      // }
 	    }
 	  }, {
 	    key: 'render',

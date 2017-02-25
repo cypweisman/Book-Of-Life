@@ -6,7 +6,7 @@ const PersonCard = require('./PersonCard')
       super();
       this.state = {
         people: [],
-        offSet: 0,
+        offSet: 0
       };
     }
 
@@ -15,12 +15,24 @@ const PersonCard = require('./PersonCard')
     }
 
     getPeople(){
-      for(var i=this.state.offSet; i < this.state.offSet + 3; i++){
-        this.setState({
-          people: this.state.people.concat(this.props.persons[i]),
-        });
-      }
-      offSet: this.state.offSet+=3
+      var selectedPersons = this.props.persons.slice(this.state.offSet, this.state.offSet + 3);
+      var people = this.state.people;
+
+      selectedPersons.forEach(function(person){
+        people.push(person);
+      }, this);
+
+      this.setState({
+        people: people,
+        offSet: this.state.offSet+=3
+      });
+
+
+      // for(var i=this.state.offSet; i < (this.state.offSet + 2); i++){
+      //   this.setState({
+      //     people: this.state.people.push(this.props.persons[i])
+      //   });
+      // }
     }
 
 
