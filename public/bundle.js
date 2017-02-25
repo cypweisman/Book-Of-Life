@@ -25881,6 +25881,66 @@
 				"activity": "We watch old comedies",
 				"special_moment": "We watched my first film together",
 				"last_visit": "We had my assistant tweet things"
+			},
+			{
+				"person_id": "4",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Bob",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "5",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Steve",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "6",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Dale",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "7",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Bob",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "8",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Jane",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "9",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Ninny",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
 			}
 		]
 	};
@@ -27639,10 +27699,6 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27660,26 +27716,56 @@
 	  function Home() {
 	    _classCallCheck(this, Home);
 
-	    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
+
+	    _this.state = {
+	      people: [],
+	      offSet: 0
+	    };
+	    return _this;
 	  }
 
 	  _createClass(Home, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.getPeople();
+	    }
+	  }, {
+	    key: 'getPeople',
+	    value: function getPeople() {
+	      for (var i = this.state.offSet; i < this.state.offSet + 3; i++) {
+	        this.setState({
+	          people: this.state.people.concat(this.props.persons[i])
+	        });
+	      }
+	      offSet: this.state.offSet += 3;
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-	      console.log(this.props);
+	      var _this2 = this;
+
+	      console.log(this.state.people);
 	      return React.createElement(
 	        'div',
 	        null,
 	        React.createElement(
-	          'ul',
+	          'ol',
 	          null,
-	          this.props.persons.map(function (person, index) {
+	          this.state.people.map(function (person, index) {
 	            return React.createElement(
 	              'li',
 	              { style: { display: 'inline-block' }, key: person.person_id },
 	              React.createElement(PersonCard, { name: person.name, photo: person.photo, person_id: person.person_id })
 	            );
 	          })
+	        ),
+	        React.createElement(
+	          'button',
+	          { className: 'home-btn', ref: 'query', onClick: function onClick(e) {
+	              _this2.getPeople();
+	            }, type: 'button' },
+	          'See More'
 	        )
 	      );
 	    }
@@ -27687,9 +27773,6 @@
 
 	  return Home;
 	}(React.Component);
-
-	exports.default = Home;
-
 
 	module.exports = Home;
 
