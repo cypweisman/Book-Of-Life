@@ -4,7 +4,7 @@ const { Link } = require('react-router')
 const Nav = React.createClass({
   render () {
     return (
-      <header className='header'>
+      <header className='navbar navbar-default'>
         <h1 className='brand'>
           <Link to='/' className='brand-link'>
           Book Of Life
