@@ -63,21 +63,6 @@
 
 	var App = React.createClass({
 	  displayName: 'App',
-
-	  // assignPerson (nextState, replace) {
-	  //     const personArray = persons.filter((person) => person.person_id === nextState.params.id )
-
-	  //   if (personArray.length <1) {
-	  //     return replace('/')
-	  //   }
-
-	  //   // Object.assign(nextState.params, personArray[0])
-	  //   nextState.params.person = personArray[0]
-	  //   return nextState
-	  //   },
-	  //new comment
-
-
 	  render: function render() {
 	    {/* this is a comment. Use curly braces whenever you want to use normal js in jsx */}
 	    return React.createElement(
@@ -19843,10 +19828,6 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
@@ -19859,8 +19840,7 @@
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //const React = require('react')
-
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var Nav = __webpack_require__(160);
 
@@ -19881,7 +19861,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'app-container' },
+	        { className: 'container' },
 	        _react2.default.createElement(Nav, null),
 	        (0, _react.cloneElement)(_react.Children.only(this.props.children), { persons: persons, handleChangePersons: this.handleChangePersons })
 	      );
@@ -19898,7 +19878,6 @@
 	//   </div>
 	// )
 
-	exports.default = Layout;
 	var element = _react2.default.PropTypes.element;
 
 
@@ -25897,6 +25876,66 @@
 				"activity": "We watch old comedies",
 				"special_moment": "We watched my first film together",
 				"last_visit": "We had my assistant tweet things"
+			},
+			{
+				"person_id": "4",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Bob",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "5",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Steve",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "6",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Dale",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "7",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Cole",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "8",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "Eric",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
+			},
+			{
+				"person_id": "9",
+				"photo": "Joan_Rivers_at_Udderbelly_09.jpg",
+				"name": "tatum",
+				"category": "friend",
+				"music": "one of Bette Midler's sappy songs",
+				"activity": "We love to go on walks and tell dirty jokes",
+				"special_moment": "You came to see me at that dive on Lincoln",
+				"last_visit": "We trashed some Hollywood 'stars'"
 			}
 		]
 	};
@@ -27655,10 +27694,6 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27669,9 +27704,6 @@
 
 	var React = __webpack_require__(1);
 	var PersonCard = __webpack_require__(228);
-	//const { persons } = require('../public/data')
-
-	//const Home = React.createClass({
 
 	var Home = function (_React$Component) {
 	  _inherits(Home, _React$Component);
@@ -27679,26 +27711,67 @@
 	  function Home() {
 	    _classCallCheck(this, Home);
 
-	    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
+
+	    _this.state = {
+	      people: [],
+	      offSet: 0
+	    };
+	    return _this;
 	  }
 
 	  _createClass(Home, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.getPeople();
+	    }
+	  }, {
+	    key: 'getPeople',
+	    value: function getPeople() {
+	      var selectedPersons = this.props.persons.slice(this.state.offSet, this.state.offSet + 3);
+	      var people = this.state.people;
+
+	      selectedPersons.forEach(function (person) {
+	        people.push(person);
+	      }, this);
+
+	      this.setState({
+	        people: people,
+	        offSet: this.state.offSet += 3
+	      });
+
+	      // for(var i=this.state.offSet; i < (this.state.offSet + 2); i++){
+	      //   this.setState({
+	      //     people: this.state.people.push(this.props.persons[i])
+	      //   });
+	      // }
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-	      console.log(this.props);
+	      var _this2 = this;
+
+	      console.log(this.state.people);
 	      return React.createElement(
 	        'div',
 	        null,
 	        React.createElement(
-	          'ul',
+	          'ol',
 	          null,
-	          this.props.persons.map(function (person, index) {
+	          this.state.people.map(function (person, index) {
 	            return React.createElement(
 	              'li',
 	              { style: { display: 'inline-block' }, key: person.person_id },
 	              React.createElement(PersonCard, { name: person.name, photo: person.photo, person_id: person.person_id })
 	            );
 	          })
+	        ),
+	        React.createElement(
+	          'button',
+	          { className: 'home-btn', ref: 'query', onClick: function onClick(e) {
+	              _this2.getPeople();
+	            }, type: 'button' },
+	          'See More'
 	        )
 	      );
 	    }
@@ -27706,9 +27779,7 @@
 
 	  return Home;
 	}(React.Component);
-	//})
 
-	exports.default = Home;
 	module.exports = Home;
 
 /***/ },
