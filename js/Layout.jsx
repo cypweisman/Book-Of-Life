@@ -5,10 +5,13 @@ const { persons } = require('../public/data')
 class Layout extends Component {
   render () {
     return (
-    <div className='container'>
+    <div>
+      <div className='banner' />
       <Nav />
+      <div className='container'>
         {cloneElement(Children.only(this.props.children), {persons: persons, handleChangePersons: this.handleChangePersons })}
       {/*{this.props.children}*/}
+      </div>
     </div>
     )
   }

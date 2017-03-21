@@ -19861,9 +19861,14 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'container' },
+	        null,
+	        _react2.default.createElement('div', { className: 'banner' }),
 	        _react2.default.createElement(Nav, null),
-	        (0, _react.cloneElement)(_react.Children.only(this.props.children), { persons: persons, handleChangePersons: this.handleChangePersons })
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          (0, _react.cloneElement)(_react.Children.only(this.props.children), { persons: persons, handleChangePersons: this.handleChangePersons })
+	        )
 	      );
 	    }
 	  }]);

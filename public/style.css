@@ -2,34 +2,43 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: 'Quicksand', sans-serif;
-}
+.banner {
+  height: 300px;
+  background-image: url(img/posters/people-vintage-photo-memories.jpg);
+  background-size: 80%;
+  background-position: center;
 
-.misc {
-  display: flex;
-  align-items: center;
-  color: #333;
-  padding-bottom: 50px;
-  padding: 15px 30px;
 }
 
 .container {
   position: absolute;
   padding: 15px 30px;
   width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   justify-content: center;
   text-align: center;
-  background-image: url(img/posters/Diary-Pen-Empty-Paper-Blank-Diary-Blank-Paper-1230085.jpg);
-  background-size: cover;
-  background-position: center;
   padding-bottom: 50px;
+  background-color: #f7f2dc;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.detail-photo{
+  border: 2px solid #333;
+  width: 350px;
+  height: 350px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-color: rgba(220, 220, 220, .8);
 }
 
 .header {
-   z-index: 10;
+  z-index: 10;
   position: fixed;
   display: flex;
   align-items: center;
@@ -43,8 +52,21 @@ html {
 
 }
 
-.btn {
-  margin-top: 20px;
+html {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.misc {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding-bottom: 50px;
+  padding: 15px 30px;
+}
+
+ol {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .persons {
@@ -82,17 +104,7 @@ html {
   color: #22324c;
 }
 
-.detail-photo{
-  border: 2px solid #333;
-  width: 350px;
-  height: 350px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  background-color: rgba(220, 220, 220, .8);
-}
+
 
 /* .detail-music, .detail-special-moment, .detail-activity, .detail-last-visit {
 
@@ -105,8 +117,8 @@ html {
     border: 2px solid #333;
    /* width: 40%; */
     display: inline-block;
-    margin-bottom: 20px;
-
+   /* margin-bottom: 20px; */
+    margin: 50px;
 
 }
     /* flip the pane when hovered */
