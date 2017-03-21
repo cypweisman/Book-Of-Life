@@ -83,7 +83,7 @@ ol {
   overflow: scroll;
   background-color: rgba(220, 220, 220, .8);
   margin-top: 20%;
-
+  margin-right: 40px;
 }
 
 .person-card-img {
