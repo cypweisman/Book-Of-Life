@@ -1,5 +1,17 @@
-###Book Of Life
+### Book Of Life
+React, ES6, Github Pages
 
-My first app using React and ES6. This app would be used by people with dementia to help them recognize family/friends and facts about their relationship. 
+Project Goal:
+- Allow a user (person with dimentia) to review facts about family/friends in a stimulating but simple way 
 
-[See it here](https://cypweisman.github.io/Book-Of-Life/)
+Current Status:
+- Frontend is functional with family/friends index and profiles
+
+Up Next:
+- Add backend (possibly Rails)
+- Connect to database
+- Add users and authentication
+- Develop tests
+
+[View app here](https://cypweisman.github.io/Book-Of-Life/)
+
